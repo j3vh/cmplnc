@@ -19,8 +19,8 @@ const whenExternalScripts = (items = []) =>
   SITE.googleAnalyticsId ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: SITE.origin,
-  base: SITE.basePathname,
+  site: 'https://j3vh.github.io',
+  base: '/cmplnc',
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
